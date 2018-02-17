@@ -1,5 +1,45 @@
 .header{
-    & h1{
-    	color: gray;
+    background-image: url(../img/header_bg.png);
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+
+    &__logo{
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    &__line{
+        border-top: 1px #695c77 solid;
+        width: 100%;
+        display: block;
+    }
+
+    &__block-text{
+        width: 50%;
+    }
+
+    &__title{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 300;
+        padding: 10px;
+    }
+
+    &__text{
+        width: 55%;
+        padding: 20px 20px 80px 20px;
+        background-color: #1b0b2a;
+        opacity: 0.8;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
     }
 }
