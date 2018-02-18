@@ -1,12 +1,11 @@
 .header{
     background-image: url(../img/header_bg.png);
     background-position: top center;
-    position: absolute;
     top: 0;
     background-repeat: no-repeat;
     width: 100vw;
     color: white;
-    padding-bottom: 150px;
+    padding-bottom: 5px;
     max-width: 100%;
 
     &__logo{
@@ -142,23 +141,21 @@
         color: gray;
     }
 
+    & .arrow{
+        position: absolute;
+        right: 18px;
+        top: 24px;
+        width: 14px;
+        height: 7px;
+
+        background-image: url(../img/svg/arrow_b.svg);
+    }
+
     &__sel{
         appearance: none;
         position: relative;
         width: 100%;
-        
-        &::after{
-            background-image: url(../img/svg/arrow-b.svg);
-            padding: 0 8px;
-            font-size: 12px;
-            position: absolute;
-            top: 0;
-            z-index: 1;
-            text-align: center;
-            width: 10px;
-            color: black !important;
-            box-sizing: border-box;
-        }
+        cursor: pointer;
     }
 
     &__btn{
