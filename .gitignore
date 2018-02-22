@@ -2,3 +2,4 @@ node_modules/
 package-lock.json
 src/index.html
 src/style/main.css
+src/style/easy-responsive-tabs.css

@@ -22,10 +22,11 @@
 				<div class="form__subtitle">Open account</div>
 				<form class="form" action="" method="post" name="form-register">
 					<input required class="form__inp" type="text" placeholder="Full name">
-					<input required class="form__inp" type="text" placeholder="E-mail">
+					<input required class="form__inp" type="email" placeholder="E-mail">
 					<div class="form__group">
-						<input required maxlength="4" class="form__inp form__inp--bord-left" type="text" placeholder="+345">
-						<input required class="form__inp form__inp--bord-right" type="text">
+						<input required maxlength="3" onkeyup="nextJump(this);" onkeypress="check_number();" class="form__inp form__inp--bord-left" type="text" placeholder="345">
+						<span class="plus">+</span>
+						<input required class="form__inp form__inp--bord-right" onkeypress="check_number();" maxlength="10" type="text">
 					</div>
 					<div class="form__group">
 					<select required class="form__sel">

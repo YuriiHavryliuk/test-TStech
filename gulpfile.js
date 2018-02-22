@@ -83,7 +83,7 @@ gulp.task('img', function() {
 gulp.task('build', ['clean', 'img', 'sass', 'nunjucks'], function() {
 
 	var buildCss = gulp.src([ 
-		'src/css/main.min.css'])
+		'src/css/*.css'])
 	.pipe(gulp.dest('docs/css'))
 
 	var buildFonts = gulp.src('src/fonts/**/*') 
@@ -92,7 +92,7 @@ gulp.task('build', ['clean', 'img', 'sass', 'nunjucks'], function() {
 	var buildJs = gulp.src('src/script/**/*') 
 	.pipe(gulp.dest('docs/script'))
 
-	var buildHtml = gulp.src('docs/*.html') 
+	var buildHtml = gulp.src('src/*.html') 
 	.pipe(gulp.dest('docs'));
 
 });
