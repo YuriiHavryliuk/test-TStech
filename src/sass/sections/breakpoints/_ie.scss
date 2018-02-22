@@ -1,0 +1,51 @@
+/* style for IE9 */ 
+@media screen and (min-width:0\0) { 
+    body{
+        overflow-x: hidden;
+    }
+    .tab{
+        width: 60% !important;
+    }
+    .form__group-ie {
+        display: inline;
+    }
+    .form__inp--bord-right {
+        width: 55%;
+    }
+    .header__img {
+        bottom: -25px;
+    }
+    .header__logos {
+        padding-bottom: 10px;
+    }
+    .tab__subtitle {
+        font-size: 26px;
+    }
+
+    
+    .tab__btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+    }
+    .tab .block-tab{
+        display: block;
+        width: 100%;
+        position: relative;
+        padding-bottom: 50px;
+    }
+  }
+
+  @media screen and (min-width:0\0)and (max-width : 768px) {
+    .tab{
+        width: 100% !important;
+    }
+    .form__inp--bord-right {
+        width: 60%;
+    }
+    .tab__btn {
+        width: 100%;
+        padding: 20px 0;
+    }
+  }

@@ -3,4 +3,39 @@
     .container{
 		width: 720px;
     }
+    .tab__info-block{
+      flex-direction: column;
+  }
+  .tab__info{
+      width: 100%;
+  }
+
+    .header{
+      &__img {
+        width: 377px;
+        right: -77px;
+        bottom: -15px;
+    }
+
+      & .form{
+        padding: 0 40px;
+      }
+
+      &__block-form {
+        width: 43%;
 }
+      &__text {
+        width: 63%;
+        padding: 10px 20px 35px 25px;
+        font-size: 16px;
+        margin-top: 0;
+    }
+      & .form__lbl--agree {
+        font-size: 15px;
+      }
+      &__logos {
+        margin-right: 20px;
+        padding-bottom: 10px;
+      }
+
+}}

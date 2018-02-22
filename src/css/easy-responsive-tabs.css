@@ -1,0 +1,131 @@
+
+
+h2.resp-accordion {
+    cursor: pointer;
+    display: none;
+    transition: 0.5s linear;
+}
+
+.resp-tab-content {
+    display: none;
+    padding: 0 25px 0 25px;
+}
+
+.resp-tab-active {
+    color: #3f808a !important;
+    border-right: none !important;
+    padding-left: 21px !important;
+    border-left: 12px solid #7fc5d0 !important;
+    transition: 0.5s linear;
+	margin-bottom: -2px !important;
+}
+
+
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+
+
+h2.resp-accordion {
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid #cecece;
+    background-color: #f8f8f8;
+    margin: 0px;
+    padding: 20px 30px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+h2.resp-tab-active:last-of-type{ 
+    margin-bottom: 0 !important;
+}
+
+
+
+/*-----------Vertical tabs-----------*/
+
+.resp-vtabs .resp-tabs-list li {
+    display: block;
+    cursor: pointer;
+    float: none;
+}
+
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    clear: none;
+}
+
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+    background: #DBDBDB;/* !important;*/
+    padding-left: 30px !important;
+    padding-bottom: 30px !important;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.resp-easy-accordion h2.resp-accordion {
+    display: block;
+}
+
+.resp-easy-accordion .resp-tab-content {
+    border: 1px solid #c1c1c1;
+}
+
+.resp-easy-accordion .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1;/* !important;*/
+}
+
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+
+.resp-tab-content-active {
+    display: block;
+
+}
+.tab__btn{
+    border-radius: 4px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    ul.resp-tabs-list {
+        display: none;
+    }
+    .resp-tab-active {
+        border: none !important;
+    }
+    .resp-tab-content-active:last-of-type{
+        margin-bottom: -10px !important;
+    }
+
+    h2.resp-accordion {
+        display: block;
+    }
+    h2.resp-tab-active {
+        padding-left: 30px !important;
+        border: 1px solid white !important;
+        background: white !important;
+        
+    }
+
+    .resp-vtabs .resp-tab-content {
+        border: none;
+    }
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: 100px;
+        clear: none;
+    }
+
+    .resp-accordion-closed {
+        display: none !important;
+    }
+
+}

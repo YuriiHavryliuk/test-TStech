@@ -1,8 +1,79 @@
 
-
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
     .container{
         width: 540px;
     }
+    .section-info{
+        padding-top: 40px;
+    }
+    .header{
+        overflow: hidden;
+        padding-bottom: 20px;
+
+        &__img {
+            width: 484px;
+            bottom: -219px;
+            right: 20px;
+        }
+        &-container {
+            flex-direction: column;
+        }
+        &__block-text {
+            width: 100%;
+        }
+        &__block-form {
+            width: 100%;
+            margin-top: 230px;
+        }
+        &__text {
+            width: 78%;
+            font-size: 16px;
+        }
+        &__logos {
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+        }
+    }
+
+    .logos-wrapper{
+        height: 80px;
+    }
+    .form-bg{
+        opacity: 1;
+    }
+    .tab{
+        flex-direction: column;
+
+        &__item{
+            background-color: white;
+            border-radius: 4px;
+        }
+        &__text{
+            margin: 0;
+            margin-bottom: 35px;
+
+
+        }
+        & .btn--purple{
+            margin: 20px;
+        }
+
+        & .block-tab{
+            background-color: transparent !important;
+        }
+        &__info-block{
+            flex-direction: column;
+            margin-bottom: 8px;
+        }
+        &__info{
+            width: 100%;
+        }
+        &__subtitle {
+            margin: 0 0 10px 0;
+        }
+
+    }
 }
+

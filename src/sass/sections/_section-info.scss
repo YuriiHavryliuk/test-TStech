@@ -3,17 +3,24 @@
     background-position: top center;
     background-repeat: no-repeat;
     width: 100vw;
+    background-attachment: fixed;
     padding-bottom: 33px;
     padding-top: 65px;
     max-width: 100%;
     background-size: cover;
+    min-width: 320px;
 }
 
 .tab{
-    display: flex;
+    display: flex !important;
+    width: 100%;
     
+    &__text{
+        margin-top: 40px;
+    }
     &__titles{
-        flex: 25%;
+        margin-top: 0 !important;
+        padding-left: 0;
     }
     &__title{
         background-color: #f8f8f8;
@@ -30,19 +37,19 @@
         }
     }
 
+
     &__content{
         flex: 73%;
-        background-color: #ffffff;
         padding: 30px 30px 0 30px;
         font-size: 18px;
         color: #282828;
         line-height: 26px;
-        border-radius: 6px;
     }
     &__info-block{
         display: flex;
         justify-content: space-between;
         margin-top: 40px;
+        margin-bottom: 20px;
     }
     &__info{
         width: 45%;
@@ -51,29 +58,28 @@
         margin-bottom:0;
     }
     .btn--purple{
-        background-color: #52396c;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.44), inset 1px 1px 0 rgba(255, 255, 255, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.1);
+        background-color: #42275e;
+        background-image: linear-gradient(to top, rgba(0, 1, 1, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
         padding: 8px 50px;
         text-decoration: none;
         font-size: 20px;
         margin-bottom: 30px;
     }
     &__btn{
-        margin-top: 20px;
+        background-color: white;
         display: flex;
         justify-content: center;
     }
-    & .js-tab-item {
-        display: none;
-      }
-    & .js-tab-item.active {
-        display: block;
-      }
-      &__title.active{
-          color: #3f808a;
-          background-color: white;
-          border-right: none;
-          padding-left: 21px;
-          border-left: 12px solid #7fc5d0;
-      }
+
+    & .block-tab{
+        height: 100%;
+        display: flex;
+        background-color: white;
+        width: 100%;
+        flex-direction: column;
+        border-radius: 4px;
+        
+    }
 
 }
